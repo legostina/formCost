@@ -1,0 +1,63 @@
+.agreement {
+  @include openSans;
+  position: relative;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: -0.5px;
+  color: $dark;
+  padding: 2px 0 0 44px;
+
+  @media (min-width: $tablet-width) {
+    padding: 11px 0 0 33px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 225px;
+    margin: 22px 0 0 85px;
+    padding-left: 41px;
+    order: 2;
+  }
+}
+
+.agreement__input {
+  display: none;
+}
+
+.agreement__label {
+  &:hover {
+    text-decoration: none;
+  }
+
+  &::before {
+    @include pseudo;
+    top: 0;
+    left: 0;
+    width: 24px;
+    height: 24px;
+    border: 2px solid $border;
+    box-sizing: border-box;
+
+    @media (min-width: $tablet-width) {
+      top: 11px;
+      border-color: #3D3BFF;
+      background: #3D3BFF;
+    }
+  }
+
+  &::after {
+    @include pseudo;
+    top: 4px;
+    left: 10px;
+    width: 6px;
+    height: 14px;
+    border: solid $blue;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+    box-sizing: border-box;
+
+    @media (min-width: $tablet-width) {
+      top: 14px;
+      border-color: #fff;
+    }
+  }
+}

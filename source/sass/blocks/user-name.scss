@@ -1,0 +1,14 @@
+.user-name {
+  text-align: center;
+  padding-top: 16px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 361px;
+    padding-top: 11px;
+    margin-left: 86px;
+  }
+}

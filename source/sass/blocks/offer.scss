@@ -1,0 +1,19 @@
+.offer {
+  @include flexColumn;
+  text-align: center;
+  position: relative;
+  font-family: "Roboto", "Arial", sans-serif;
+  margin-top: 81px;
+  padding-bottom: 41px;
+  background: $blue;
+  color: #fff;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 35px;
+    padding-bottom: 73px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 14px;
+  }
+}

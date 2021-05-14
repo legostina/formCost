@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width" />
+    <title>Стоимость обучения</title>
+    <link rel="preload" href="fonts/opensans.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/opensanslight.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/opensansbold.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/Roboto-Bold.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/Roboto-Medium.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/Roboto-Regular.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/RobotoSlab-Light.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/RobotoSlab-Regular.woff2" as="font" crossorigin="anonymous">
+    <link type="text/css" rel="stylesheet" href="css/style.css"/>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  </head>
+  <body>
+
+    <main class="page-main">
+      <div class="contest contest--form">
+        <h1 class="contest__title contest__title--form">Стоимость обучения</h1>
+      </div>
+
+      <section class="cost">
+        <div class="cost__block offer">
+          <div class="offer__block discount">
+            <p class="discount__line name">скидка</p>
+            <p class="discount__line percent">40%</p>
+            <p class="discount__line first">первым 20</p>
+          </div>
+          <div class="offer__block max-cost">
+            <p class="max-cost__line text">Полная стоимость курса</p>
+            <p class="max-cost__line price">50 000 <span class="ruble ruble__max-cost">Р</span></p>
+          </div>
+          <div class="offer__block installment">
+            <p class="installment__line price">
+              <span class="number">2 900</span>
+              <span class="ruble ruble__installment">Р</span></p>
+            <p class="installment__line text">Рассрочка без первого взноса</p>
+          </div>
+          <div class="offer__block amount">
+            <p class="amount__line price">29 000 <span class="ruble ruble__amount">Р</span></p>
+            <p class="amount__line text">Первым 20-ти</p>
+            <p class="amount__line text text-desktop">Для первых 20-ти</p>
+          </div>
+        </div>
+
+        <form class="cost__block record" action="https://skillbox.ru" method="post" id="form-users">
+          <h2 class="record__title">Запишитесь на курс</h2>
+          <ul class="record__list phone"></ul>
+          <div class="record__plans date">
+            <div class="date__block start">
+              <p class="start__block text">Старт курса:</p>
+              <p class="start__block count">15 июля</p>
+              <p class="start__block count count-tablet">15 июня</p>
+              <p class="start__block count count-desktop">7 сентября</p>
+            </div>
+            <div class="date__block places">
+              <p class="places__block text">Осталось:</p>
+              <p class="places__block count">12 мест</p>
+              <p class="places__block count count-tablet">15 мест</p>
+              <p class="places__block count count-desktop">19 мест</p>
+            </div>
+          </div>
+          <div class="record__name user-name">
+            <p class="user-name__input record-input">
+              <label class="record-input__label" for="first-name">Имя</label>
+              <input class="record-input__field first-name" type="text" name="first-name" id="first-name" placeholder="Имя" minlength="1" maxlength="30">
+            </p>
+            <p class="user-name__input record-input">
+              <label class="record-input__label" for="telephone">Телефон</label>
+              <input class="record-input__field telephone" type="tel" name="telephone" id="telephone" placeholder="Телефон" minlength="12" maxlength="12">
+            </p>
+            <p class="user-name__input record-input">
+              <label class="record-input__label" for="mail">Email</label>
+              <input class="record-input__field mail" type="email" name="mail" id="mail" placeholder="Email" minlength="5" maxlength="30">
+            </p>
+          </div>
+          <div class="record__check agreement">
+            <label class="agreement__label link" for="agreement">Я согласен с условиями обработки
+              <a class="link__agreement" href="#">персональных данных</a>
+            </label>
+            <input class="agreement__input" type="checkbox" name="agreement" id="agreement" checked>
+          </div>
+          <div class="record__bottom bottom-form">
+            <button class="bottom-form__send" type="submit">Записаться</button>
+          </div>
+
+        </form>
+
+      </section>
+
+    </main>
+
+    <script type="text/javascript" src="js/phone.js"></script>
+    <script type="text/javascript" src="js/validate.js"></script>
+  </body>
+</html>

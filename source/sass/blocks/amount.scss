@@ -1,0 +1,61 @@
+.amount {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 17px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 28px;
+  }
+}
+
+.amount {
+  .price {
+    height: 53px;
+    font-weight: 300;
+    font-size: 40px;
+    line-height: 53px;
+    margin: 0;
+
+    @media (min-width: $tablet-width) {
+      font-size: 50px;
+      line-height: 66px;
+      letter-spacing: -3px;
+      height: 66px;
+    }
+
+    @media (min-width: $desktop-width) {
+      height: 70px;
+    }
+  }
+}
+
+.amount {
+  .text {
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: -0.5px;
+    margin: 0;
+
+    @media (min-width: $tablet-width) {
+      font-size: 18px;
+      line-height: 21px;
+    }
+
+    @media (min-width: $desktop-width) {
+      display: none;
+    }
+  }
+
+  .text-desktop {
+    display: none;
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: -0.5px;
+    margin: 0;
+
+    @media (min-width: $desktop-width) {
+      display: flex;
+    }
+  }
+}

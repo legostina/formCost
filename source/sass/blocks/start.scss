@@ -1,0 +1,11 @@
+.start {
+  .text {
+    @media (min-width: $desktop-width) {
+      padding-right: 8px;
+    }
+  }
+}
+
+.start__block {
+  margin: 0;
+}

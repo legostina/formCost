@@ -1,0 +1,79 @@
+.ruble {
+  position: relative;
+
+  &:after {
+    @include pseudo;
+    background: $white;
+  }
+}
+
+.ruble__max-cost {
+  position: relative;
+
+  &:after {
+    top: 61%;
+    left: 1px;
+    width: 19px;
+    height: 2px;
+    background: $purple;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 59%;
+    left: 3px;
+    width: 20px;
+  }
+}
+
+.ruble__installment {
+  letter-spacing: 10.1px;
+
+  @media (min-width: $tablet-width) {
+    letter-spacing: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    letter-spacing: -14.9px;
+  }
+
+  &:after {
+    top: 61%;
+    left: 2px;
+    width: 28px;
+    height: 4px;
+
+    @media (min-width: $tablet-width) {
+      top: 69%;
+      left: 4px;
+      width: 42px;
+      height: 5px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 68%;
+      left: 5px;
+      width: 41px;
+      height: 5px;
+    }
+  }
+}
+
+.ruble__amount {
+  &:after {
+    top: 62%;
+    left: 1px;
+    width: 19px;
+    height: 2px;
+
+    @media (min-width: $tablet-width) {
+      top: 59%;
+      width: 22px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 59%;
+      left: 4px;
+      width: 21px;
+    }
+  }
+}

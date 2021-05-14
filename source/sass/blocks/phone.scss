@@ -1,0 +1,21 @@
+.phone {
+  margin: 0;
+  padding-left: 17px;
+
+  @media (min-width: $desktop-width) {
+    margin-left: 85px;
+  }
+}
+
+.phone__number {
+  @include openSans;
+  font-size: 15px;
+  line-height: 26px;
+  color: $dark;
+  padding: 0 0 14px 7px;
+}
+
+.phone__number::marker {
+  color: $blue;
+  font-size: 16px;
+}

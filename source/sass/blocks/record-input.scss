@@ -1,0 +1,52 @@
+.record-input {
+  position: relative;
+  margin: 0;
+  padding-bottom: 19px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 21px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 18px;
+  }
+}
+
+.record-input__label {
+  display: none;
+}
+
+.record-input__field {
+  width: 78%;
+  height: 57px;
+  background: $white;
+  border: 2px solid $border;
+  padding: 0 10%;
+
+  &::placeholder {
+    @include openSans;
+    font-size: 15px;
+    line-height: 28px;
+    letter-spacing: -0.5px;
+    color: $dark;
+  }
+
+  :required:valid {
+    border-color: $green;
+  }
+
+  :invalid {
+    border-color: $red;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 90%;
+    padding: 0 4.5%;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 307px;
+    height: 58px;
+    padding: 0 30px;
+  }
+}

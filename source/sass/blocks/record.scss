@@ -1,0 +1,42 @@
+.record {
+  padding: 40px 24px 55px 25px;
+
+  @media (min-width: $tablet-width) {
+    padding: 71px 121px 78px 121px;
+    box-shadow: 0 2px 24px $shadow;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 57px 0;
+    margin-top: 14px;
+  }
+}
+
+.record__title {
+  width: 185px;
+  text-align: left;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 36px;
+  letter-spacing: -0.5px;
+  margin: 0 0 25px 0;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    text-align: center;
+    font-size: 38px;
+    line-height: 40px;
+    margin-bottom: 39px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: unset;
+    text-align: left;
+    font-size: 33px;
+    letter-spacing: 0.2px;
+    margin-bottom: 24px;
+    padding: 58px 0 0 85px;
+  }
+}

@@ -1,0 +1,16 @@
+.percent {
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 28px;
+  text-align: center;
+  letter-spacing: -0.5px;
+  padding-bottom: 4px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 7px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 4px;
+  }
+}

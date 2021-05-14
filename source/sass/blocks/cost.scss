@@ -1,0 +1,26 @@
+.cost {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    width: 92%;
+    margin: 0 4%;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: nowrap;
+    width: 100%;
+    max-width: 1170px;
+    margin: 0;
+  }
+}
+
+.cost__block {
+  @media (min-width: $desktop-width) {
+    width: 50%;
+  }
+}

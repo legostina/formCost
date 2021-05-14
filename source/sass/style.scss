@@ -1,0 +1,47 @@
+@import "font";
+@import "variables.scss";
+@import "blocks/mixin.scss";
+@import "blocks/agreement.scss";
+@import "blocks/bottom-form.scss";
+@import "blocks/contest.scss";
+@import "blocks/cost.scss";
+@import "blocks/count.scss";
+@import "blocks/count-desktop.scss";
+@import "blocks/count-tablet.scss";
+@import "blocks/date.scss";
+@import "blocks/discount.scss";
+@import "blocks/first.scss";
+@import "blocks/installment.scss";
+@import "blocks/link.scss";
+@import "blocks/max-cost.scss";
+@import "blocks/name.scss";
+@import "blocks/offer.scss";
+@import "blocks/page-main.scss";
+@import "blocks/percent.scss";
+@import "blocks/phone.scss";
+@import "blocks/places.scss";
+@import "blocks/price.scss";
+@import "blocks/record.scss";
+@import "blocks/record-input.scss";
+@import "blocks/ruble.scss";
+@import "blocks/start.scss";
+@import "blocks/amount";
+@import "blocks/user-name.scss";
+
+body {
+  font-family: "Roboto", "Arial", sans-serif;
+  min-width: 320px;
+  margin: 0;
+  background: $white;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}

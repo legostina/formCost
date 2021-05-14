@@ -1,0 +1,6 @@
+.page-main {
+    @include flexColumn;
+    justify-content: center;
+    height: auto;
+    background-color: $white;
+}

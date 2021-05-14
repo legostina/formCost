@@ -1,0 +1,58 @@
+.installment {
+  .price {
+    font-family: "Roboto Slab", "Arial", sans-serif;
+    font-size: 56px;
+    font-weight: 400;
+    line-height: 74px;
+    letter-spacing: -2px;
+    height: 72px;
+    padding-top: 12px;
+
+    .number {
+      letter-spacing: -2.9px;
+
+      @media (min-width: $desktop-width) {
+        letter-spacing: -1.9px;
+      }
+    }
+
+    @media (min-width: $tablet-width) {
+      display: flex;
+      text-align: center;
+      justify-content: center;
+      height: 96px;
+      font-size: 80px;
+      line-height: 106px;
+      letter-spacing: -2px;
+      padding-top: 21px;
+    }
+
+    @media (min-width: $desktop-width) {
+
+      letter-spacing: -4px;
+      padding-top: 6px;
+    }
+  }
+}
+
+.installment__line {
+  margin: 0;
+}
+
+.installment {
+  .text {
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: -0.5px;
+
+    @media (min-width: $tablet-width) {
+      font-size: 20px;
+      line-height: 23px;
+      letter-spacing: -0.5px;
+    }
+
+    @media (min-width: $desktop-width) {
+      letter-spacing: 1px;
+    }
+  }
+}

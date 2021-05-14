@@ -1,0 +1,40 @@
+.max-cost {
+  font-size: 15px;
+  line-height: 18px;
+  padding-top: 89px;
+  color: $gray;
+
+  .price {
+    &:after {
+      @include pseudo;
+      width: 76%;
+      border: 1px solid $purple;
+      top: 30px;
+      left: 19px;
+
+      @media (min-width: $tablet-width) {
+        width: 85%;
+        left: 10px;
+      }
+
+      @media (min-width: $desktop-width) {
+        width: 84%;
+        top: 32px;
+        left: 13px;
+      }
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-top: 132px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 244px;
+  }
+}
+
+.max-cost__line {
+  letter-spacing: -0.5px;
+  margin: 0;
+}
